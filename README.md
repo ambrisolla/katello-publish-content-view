@@ -50,9 +50,5 @@ Action status  : Success!
 
 ```mermaid
 classDiagram
-A[run.sh] --> B((get_content_views))
-B --> A
-A --> C(Round Rect)
-B --> D{Rhombus}
-C --> D
+Class09 --* C3
 ```
