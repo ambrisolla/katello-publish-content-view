@@ -1,6 +1,9 @@
 ## katello-publish-content-view
 This script publishes a new version of a Katello Content View if some repository was synced after last Content View version.
 
+## Prerequisite
+
+
 ## Hot to use
 Clone this repo and edit config.yml:
 ```bash
@@ -43,4 +46,12 @@ Last Published : 2022-06-02 21:29:17
 Status         : It's necessary to publish a new version for this Content View 
 Action         : Creating a new version of a Content View... 
 Action status  : Success! 
+```
+
+```mermaid
+graph LR
+A[Square Rect] -- Link text --> B((Circle))
+A --> C(Round Rect)
+B --> D{Rhombus}
+C --> D
 ```
