@@ -51,5 +51,5 @@ Action status  : Success!
 ```mermaid
 classDiagram
 run --> get_content_views
-get_content_views -- return content_view data --> run
+get_content_views --> run : return content_view data
 ```
