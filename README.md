@@ -37,7 +37,7 @@ Content view   : zabbix
 Last Published : 2022-06-02 21:29:17 
 Status         : It's not necessary to publish a new version for this Content View 
 ```
-If a new version of a Content View was created you will receive the messa bellow:
+If a new version of a Content View was created you will receive the message bellow:
 ```
 --- Initializing Katello Content View Checker --- 
 It's now       : 2022-06-03 10:44:06 
