@@ -61,5 +61,4 @@ sequenceDiagram
           run->>publish_new_content_view: Publish a new version of Content View
       end
     end
-    
 ```
