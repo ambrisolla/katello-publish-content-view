@@ -52,5 +52,6 @@ Action status  : Success!
 classDiagram
 run --> get_content_views
 get_content_views --> run
+get_content_views: return content_view data
 
 ```
