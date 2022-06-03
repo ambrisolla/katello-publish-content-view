@@ -50,5 +50,7 @@ Action status  : Success!
 
 ```mermaid
 classDiagram
-Class09 --* C3
+run --* get_content_views
+get_content_views --* run
+
 ```
