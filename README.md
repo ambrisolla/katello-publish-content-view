@@ -51,7 +51,7 @@ Action status  : Success!
 ## Flow
 ```mermaid
 sequenceDiagram
-    run->>get_content_views: Give me hte Content View Data
+    run->>get_content_views: Give me the Content View Data
     get_content_views-->>run: return Content View Data
     get_content_views->>get_repository_info: Please, give me the repository data.
     get_repository_info-->>get_content_views: return Repository Data
