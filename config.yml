@@ -1,4 +1,6 @@
-organization_id: 1
-username: admin
-password: password
-api_url: https://katello-srv.brisa.io
+envs:
+  lab:
+    organization_id: 1
+    username: admin
+    password: 0a840ef4
+    api_url: https://10.240.42.46

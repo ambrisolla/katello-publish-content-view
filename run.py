@@ -6,17 +6,19 @@ import sys
 import yaml
 import json
 from datetime import datetime
+import argparse
 
 class Katello:
 
-  def __init__(self):
+  def __init__(self, **kwargs):
+    env = kwargs['env']
     # set path to script directory
     self.full_path = os.path.abspath(os.path.dirname(__file__))
     # set log file path
     self.log_file = f'{self.full_path}/run.log'
     # load data from config.yml file
     yaml_data = open(f'{self.full_path}/config.yml', 'r').read()
-    self.config = yaml.safe_load(yaml_data)
+    self.config = yaml.safe_load(yaml_data)['envs'][env]
     #  disable SSL warnings ( lab only, remove on production )
     requests.packages.urllib3.disable_warnings()  
   
@@ -134,5 +136,8 @@ class Katello:
     log.close()
 
 if __name__ == '__main__':
-  k = Katello()
+  parser = argparse.ArgumentParser()
+  parser.add_argument('--env', required=True)
+  args = vars(parser.parse_args())
+  k = Katello(env=args['env'])
   k.run()
