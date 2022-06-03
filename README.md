@@ -49,7 +49,7 @@ Action status  : Success!
 ```
 
 ```mermaid
-Flow
+classDiagram
 A[run.sh] --> B((get_content_views))
 B --> A
 A --> C(Round Rect)
