@@ -2,7 +2,7 @@
 This script publishes a new version of a Katello Content View if some repository was synced after last Content View version.
 
 ## Prerequisite
-
+Python 3.6+
 
 ## Hot to use
 Clone this repo and edit config.yml:
