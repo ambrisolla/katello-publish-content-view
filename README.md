@@ -22,7 +22,7 @@ api_url: https://katello.example.io
 
 Run script:
 ```bash
-$ ./run.py
+$ ./run.py --env lab # change config.yml with your custom variables
 ```
 
 Read run.log file to see the output.
