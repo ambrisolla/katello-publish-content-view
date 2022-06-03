@@ -1,6 +1,6 @@
 envs:
   lab:
     organization_id: 1
-    username: admin
-    password: 0a840ef4
-    api_url: https://10.240.42.46
+    username: some_user
+    password: some_pass
+    api_url: https://katello.example.io
