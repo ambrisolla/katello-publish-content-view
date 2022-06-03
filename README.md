@@ -14,10 +14,12 @@ $ vi config.yml
 
 Change config.yml with your custom data:
 ```yaml
-organization_id: 1
-username: some_katello_username
-password: some_katello_password
-api_url: https://katello.example.io
+envs:
+  lab:
+    organization_id: 1
+    username: some_user
+    password: some_pass
+    api_url: https://katello.example.io
 ```
 
 Run script:
