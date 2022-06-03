@@ -48,10 +48,18 @@ Action         : Creating a new version of a Content View...
 Action status  : Success! 
 ```
 
+## Flow
 ```mermaid
-classDiagram
-run --> get_content_views
-get_content_views --> run : return content_view data
-get_content_views --> get_repository_info
-get_repository_info --> get_content_views
+sequenceDiagram
+    run->>get_content_views: Give me hte Content View Data
+    get_content_views-->>run: return Content View Data
+    get_content_views->>get_repository_info: Please, give me the repository data.
+    get_repository_info-->>get_content_views: return Repository Data
+    loop
+      run-->run:a
+      alt If Content View is behind the last repository sync
+          run->>publish_new_content_view: Piblish a new version of convent View
+      end
+    end
+    
 ```
