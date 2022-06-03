@@ -1,0 +1,14 @@
+
+--- Initializing Katello Content View Checker --- 
+It's now       : 2022-06-03 10:39:27 
+Content view   : zabbix 
+Last Published : 2022-06-02 21:29:17 
+Status         : It's not necessary to publish a new version for this Content View 
+
+--- Initializing Katello Content View Checker --- 
+It's now       : 2022-06-03 10:44:06 
+Content view   : zabbix 
+Last Published : 2022-06-02 21:29:17 
+Status         : It's necessary to publish a new version for this Content View 
+Action         : Creating a new version of a Content View... 
+Action status  : Success! 
