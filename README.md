@@ -1,5 +1,5 @@
 ## katello-publish-content-view
-This script publishes a new version of a Katello Content View if some repository was synced after last Content View version.
+This script publishes a new version of a Katello Content View if some the last version of a Content View is not up-to-date.
 
 ## Prerequisite
 Python 3.6+
@@ -57,7 +57,7 @@ sequenceDiagram
     get_repository_info-->>get_content_views: return Repository Data
     loop
       run-->run:Compare dates between Content View and Content View Repositories
-      alt If Content View is behind the last repository sync
+      alt If Content View is not up-to-date
           run->>publish_new_content_view: Publish a new version of Content View
       end
     end
