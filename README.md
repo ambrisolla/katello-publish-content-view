@@ -1,5 +1,5 @@
 ## katello-publish-content-view
-This script publishes a new version of a Katello Content View if some the last version of a Content View is not up-to-date.
+This script publishes a new version of a Katello Content View if the last version of a Content View is not up-to-date.
 
 ## Prerequisite
 Python 3.6+
