@@ -58,7 +58,7 @@ sequenceDiagram
     loop
       run-->run:Compare dates between Content View and Content View Repositories
       alt If Content View is behind the last repository sync
-          run->>publish_new_content_view: Publish a new version of convent View
+          run->>publish_new_content_view: Publish a new version of Content View
       end
     end
     
