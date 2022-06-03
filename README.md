@@ -51,7 +51,7 @@ Action status  : Success!
 ```mermaid
 Flow
 A[run.sh] --> B((get_content_views))
-B((get_content_views)) --> A
+B --> A
 A --> C(Round Rect)
 B --> D{Rhombus}
 C --> D
