@@ -53,5 +53,5 @@ classDiagram
 run --> get_content_views
 get_content_views --> run : return content_view data
 get_content_views --> get_repository_info
-get_repository_info -> get_content_views
+get_repository_info --> get_content_views
 ```
