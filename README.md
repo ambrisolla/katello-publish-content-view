@@ -56,7 +56,7 @@ sequenceDiagram
     get_content_views->>get_repository_info: Please, give me the repository data.
     get_repository_info-->>get_content_views: return Repository Data
     loop
-      run-->run:a
+      run-->run:Comapre dates between Content View and Content View Repositories
       alt If Content View is behind the last repository sync
           run->>publish_new_content_view: Piblish a new version of convent View
       end
