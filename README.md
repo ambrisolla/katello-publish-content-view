@@ -49,8 +49,9 @@ Action status  : Success!
 ```
 
 ```mermaid
-graph LR
-A[Square Rect] -- Link text --> B((Circle))
+Flow
+A[run.sh] --> B((get_content_views))
+B((get_content_views)) --> A
 A --> C(Round Rect)
 B --> D{Rhombus}
 C --> D
